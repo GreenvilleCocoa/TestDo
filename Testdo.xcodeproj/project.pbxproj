@@ -13,7 +13,18 @@
 		EF5C9CCB1E258D8600BCA2B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5C9CC91E258D8600BCA2B9 /* Main.storyboard */; };
 		EF5C9CCD1E258D8600BCA2B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5C9CCC1E258D8600BCA2B9 /* Assets.xcassets */; };
 		EF5C9CD01E258D8600BCA2B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5C9CCE1E258D8600BCA2B9 /* LaunchScreen.storyboard */; };
+		EF8180FE1E25952600909275 /* TestdoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8180FD1E25952600909275 /* TestdoUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF8181001E25952600909275 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF5C9CB81E258D8600BCA2B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF5C9CBF1E258D8600BCA2B9;
+			remoteInfo = Testdo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EF5C9CC01E258D8600BCA2B9 /* Testdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		EF5C9CCC1E258D8600BCA2B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5C9CCF1E258D8600BCA2B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF5C9CD11E258D8600BCA2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8180FB1E25952600909275 /* TestdoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestdoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8180FD1E25952600909275 /* TestdoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestdoUITests.swift; sourceTree = "<group>"; };
+		EF8180FF1E25952600909275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EF5C9CBD1E258D8600BCA2B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8180F81E25952600909275 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5C9CC21E258D8600BCA2B9 /* Testdo */,
+				EF8180FC1E25952600909275 /* TestdoUITests */,
 				EF5C9CC11E258D8600BCA2B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5C9CC01E258D8600BCA2B9 /* Testdo.app */,
+				EF8180FB1E25952600909275 /* TestdoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				EF5C9CD11E258D8600BCA2B9 /* Info.plist */,
 			);
 			path = Testdo;
+			sourceTree = "<group>";
+		};
+		EF8180FC1E25952600909275 /* TestdoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF8180FD1E25952600909275 /* TestdoUITests.swift */,
+				EF8180FF1E25952600909275 /* Info.plist */,
+			);
+			path = TestdoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = EF5C9CC01E258D8600BCA2B9 /* Testdo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EF8180FA1E25952600909275 /* TestdoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8181041E25952600909275 /* Build configuration list for PBXNativeTarget "TestdoUITests" */;
+			buildPhases = (
+				EF8180F71E25952600909275 /* Sources */,
+				EF8180F81E25952600909275 /* Frameworks */,
+				EF8180F91E25952600909275 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF8181011E25952600909275 /* PBXTargetDependency */,
+			);
+			name = TestdoUITests;
+			productName = TestdoUITests;
+			productReference = EF8180FB1E25952600909275 /* TestdoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +150,11 @@
 					EF5C9CBF1E258D8600BCA2B9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					EF8180FA1E25952600909275 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF5C9CBF1E258D8600BCA2B9;
 					};
 				};
 			};
@@ -117,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				EF5C9CBF1E258D8600BCA2B9 /* Testdo */,
+				EF8180FA1E25952600909275 /* TestdoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +185,13 @@
 				EF5C9CD01E258D8600BCA2B9 /* LaunchScreen.storyboard in Resources */,
 				EF5C9CCD1E258D8600BCA2B9 /* Assets.xcassets in Resources */,
 				EF5C9CCB1E258D8600BCA2B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8180F91E25952600909275 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +208,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF8180F71E25952600909275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8180FE1E25952600909275 /* TestdoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF8181011E25952600909275 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF5C9CBF1E258D8600BCA2B9 /* Testdo */;
+			targetProxy = EF8181001E25952600909275 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EF5C9CC91E258D8600BCA2B9 /* Main.storyboard */ = {
@@ -282,6 +361,30 @@
 			};
 			name = Release;
 		};
+		EF8181021E25952600909275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestdoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.frozenfirestudios.TestdoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Testdo;
+			};
+			name = Debug;
+		};
+		EF8181031E25952600909275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestdoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.frozenfirestudios.TestdoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Testdo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -299,6 +402,15 @@
 			buildConfigurations = (
 				EF5C9CD51E258D8600BCA2B9 /* Debug */,
 				EF5C9CD61E258D8600BCA2B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8181041E25952600909275 /* Build configuration list for PBXNativeTarget "TestdoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8181021E25952600909275 /* Debug */,
+				EF8181031E25952600909275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
